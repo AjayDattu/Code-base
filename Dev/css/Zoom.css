@@ -1,0 +1,27 @@
+
+
+#zoom{
+    width: 400px;
+    height: 600px;
+    border: 5px solid red;
+}
+
+
+#zoom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+#zoomed{
+
+}
+#zoom::after{
+    display: var(--display);
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../Assets/wiser-by-the-mile-OFHkPCkhYEY-unsplash.jpg);
+    background-size: 200%;
+    background-position:var(--x) var(--y);
+}
