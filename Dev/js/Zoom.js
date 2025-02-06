@@ -10,3 +10,7 @@ imageZoom.addEventListener('mousemove',(event)=>{
  imageZoom.style.setProperty('--x',points.x + '%');
  imageZoom.style.setProperty('--y',points.y + '%');
 })
+
+imageZoom.addEventListener('mouseout',()=>{
+    imageZoom.style.setProperty('--display','none');
+})
